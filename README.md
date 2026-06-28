@@ -66,7 +66,7 @@ graph TD
     subgraph Retrieval Layer
         C --> D1[Custom BM25 Keyword Search]
         C --> D2[BGE-M3 Dense Similarity]
-        D1 --> E[Reciprocal Rank Fusion (RRF)]
+        D1 --> E["Reciprocal Rank Fusion (RRF)"]
         D2 --> E
     end
     
@@ -81,11 +81,11 @@ graph TD
     
     subgraph Recruiter Intelligence Layer
         I --> J1[Candidate-JD Gap Analysis]
-        I --> J2[Recruiter Copilot Sourcing/Interviews]
+        I --> J2["Recruiter Copilot Sourcing & Interviews"]
         I --> J3[Interactive Sourcing Sandbox]
     end
     
-    J1 --> K[app.py Streamlit Dashboard & submission.csv]
+    J1 --> K["app.py Streamlit Dashboard & submission.csv"]
     J2 --> K
     J3 --> K
 ```
