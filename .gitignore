@@ -1,0 +1,15 @@
+models/bge-m3/
+models/all-MiniLM-L6-v2/
+challenge_data/
+__pycache__/
+*.log
+scratch/test_output.csv
+scratch/test_output_features.csv
+artifacts/candidate_data.pkl
+artifacts/candidate_embeddings.npy
+artifacts/features_dataset.csv
+artifacts/temp_app_shortlist_features.csv
+submission_features.csv
+fitrank_ai_submission.zip
+FITRANK AI.png
+fitrank_ai_walkthrough_steps.pdf

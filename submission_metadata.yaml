@@ -1,0 +1,84 @@
+# Redrob Hackathon — Submission Metadata for Team FitRank AI
+#
+# Copy this file to your repo root as `submission_metadata.yaml` and fill it in.
+# The fields here should match what you submit via the portal at upload time.
+# Stage 3 review uses this file to verify your portal metadata.
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "FitRank AI"  # Used in leaderboard and announcements
+
+primary_contact:
+  name: "Anshu kanukula"
+  email: "anshu.kanukula03@gmail.com"   # Used for all organizer communication
+  phone: "+91-9988776655"        # Used for top-50 / top-10 outreach
+
+team_members:
+  - name: "Anshu kanukula"
+    email: "anshu.kanukula03@gmail.com"
+    role: "ML & Software Engineer"
+  # Add more members as needed; solo participants list just one member
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/AnshuKanukula/FITRANK-AI"
+# Required. Must be reachable. Private repos OK if you can grant organizer
+# access at Stage 3 (the email to add will be communicated then).
+
+sandbox_link: "https://huggingface.co/spaces/anshukanukula03/fitrank-ai"
+# Required. A working hosted environment where the ranker can be run on a small
+# candidate sample. See Section 10.5 of submission_spec.md for acceptable
+# platforms (HuggingFace Spaces, Streamlit Cloud, Replit, Colab, Docker, Binder).
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+# The single command that produces submission.csv from candidates.jsonl.
+# Should run end-to-end within 5 minutes on CPU with 16GB RAM and no network.
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local Windows Box"                 # Or: "AWS EC2 c5.4xlarge", "Local Linux box", etc.
+  cpu_cores: 12                                 # Number of CPU cores used
+  ram_gb: 16                                    # Available RAM in GB
+  python_version: "3.12.0"                      # python --version
+  os: "Windows 11"                              # Or "Ubuntu 22.04 LTS", etc.
+  uses_gpu_for_inference: false                 # Must be false — see compute constraints
+  has_network_during_ranking: false             # Must be false — no API calls during ranking
+  pre_computation_required: true                # true if you pre-compute embeddings or train models offline
+  pre_computation_time_minutes: 85              # Approximate, if applicable
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+# Transparency only — declared use is NOT penalized. Be honest. Stage 5 interview
+# may verify these declarations against your code; declarations that contradict
+# your code or your interview are flagged.
+ai_tools_used:
+  - "Gemini"
+  - "Antigravity"
+  - "Claude"
+  - "ChatGPT"
+
+ai_usage_summary: |
+  Used Antigravity (powered by Google Gemini), Claude, and ChatGPT for architectural guidance, code reviews, Python refactoring, and constructing the Streamlit UI dashboard. No candidate data was sent to any external API during ranking or precomputation.
+
+# ============================================================================
+# Approach summary (optional but recommended)
+# ============================================================================
+methodology_summary: |
+  FitRank AI is a high-performance, trust-aware talent intelligence platform designed for the India Runs 2026 challenge. It operates in two parts: 
+  1. Offline Precomputation: Fits a Custom BM25 engine, embeds candidate profiles via local BGE-M3 weights, fuses results using Reciprocal Rank Fusion (RRF), stochastically simulates recruiter utility models and gemini-labeled choices to produce a Recruiter Preference Dataset of 1,500 pairs, and trains a LightGBM LambdaRank LTR model.
+  2. Online Ranking: Executes in <45s. Implements a multi-layered pipeline: (a) JD Parsing & Query Expansion; (b) Trust Engine filtering timeline/chronology violations (honeypots); (c) LightGBM LambdaRank LTR scoring; (d) Confidence Engine using log retrieval agreement, trust score, and feature consistency; (e) Recruiter Candidate Archetypes and side-by-side Challenge Arena comparisons for Explainable AI (XAI) reasonings.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true        # I have read submission_spec.md in full
+  code_is_original_work: true       # My code is my team's original work (using AI as a tool is fine)
+  no_collusion: true                # I have not coordinated my submission with other teams
+  honeypot_check_done: true         # OPTIONAL — set true if you explicitly checked for honeypots in your ranking
+  reproduction_tested: true         # I have tested that my reproduce_command runs end-to-end

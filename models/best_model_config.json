@@ -1,0 +1,9 @@
+{
+    "best_model": "LightGBM LTR",
+    "use_lightgbm": true,
+    "metrics": {
+        "LightGBM_LTR_Test_NDCG10": 1.0,
+        "Weighted_Baseline_Test_NDCG10": 0.925990019744182,
+        "Selected_NDCG10": 1.0
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "rag": ["retrieval-augmented generation", "vector search", "semantic search", "embeddings", "qdrant", "pinecone", "weaviate", "milvus", "chroma", "faiss", "knowledge graph", "hybrid search", "information retrieval", "hybrid retrieval"],
+  "embeddings": ["dense vectors", "sentence-transformers", "bge", "e5", "openai embeddings", "cohere embeddings", "representation learning", "text embeddings", "embedding model"],
+  "vector search": ["dense retrieval", "semantic search", "similarity search", "nearest neighbor", "ann search", "faiss", "hnsw", "cosine similarity", "dot product", "hybrid retrieval"],
+  "vector database": ["pinecone", "weaviate", "qdrant", "milvus", "chroma", "pgvector", "elasticsearch", "opensearch", "marqo", "lancedb", "faiss"],
+  "llm": ["large language model", "gpt", "llama", "mistral", "claude", "gemini", "bert", "prompt engineering", "chain of thought", "langchain", "llamaindex", "autogen", "agent", "rag"],
+  "fine-tuning": ["fine tuning", "lora", "qlora", "peft", "parameter-efficient", "sft", "dpo", "rlhf", "supervised fine-tuning", "axolotl", "unsloth", "deepspeed", "fsdp"],
+  "evaluation": ["evals", "ndcg", "mrr", "map", "precision", "recall", "bleu", "rouge", "ragas", "bertscore", "accuracy", "offline evaluation", "online evaluation", "a/b testing", "ab testing", "offline-to-online", "offline to online"],
+  "learning-to-rank": ["learning to rank", "ltr", "xgboost", "lightgbm", "ranknet", "lambdamart", "pairwise ranking", "listwise ranking", "pointwise ranking"],
+  "nlp": ["natural language processing", "text mining", "named entity recognition", "ner", "text classification", "spacy", "nltk", "transformers", "huggingface", "tokenization", "word2vec"],
+  "python": ["python", "numpy", "pandas", "scikit-learn", "sklearn", "pytorch", "torch", "tensorflow", "keras", "fastapi", "flask", "django", "pydantic", "pytest"],
+  "distributed systems": ["ray", "spark", "pyspark", "hadoop", "databricks", "dask", "kubernetes", "k8s", "docker", "mlflow", "kubeflow", "triton inference server", "vllm", "tgi", "onnx"]
+}
