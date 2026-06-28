@@ -17,6 +17,16 @@ It is designed to select and rank the top 100 matches from a pool of 100,000 can
 
 ---
 
+## 🔗 Key Submission Links
+
+*   **Live Interactive Demo (Hugging Face Spaces):** [anshukanukula03/fitrank-ai](https://huggingface.co/spaces/anshukanukula03/fitrank-ai)
+*   **Final Ranking Output (CSV):** [`submission.csv`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/submission.csv) | [`team_fitrank_ai.csv`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/team_fitrank_ai.csv)
+*   **Business Impact & Sourcing Case Study:** [`business_impact.md`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/artifacts/business_impact.md)
+*   **System Architecture Benchmarks:** [`benchmarks.md`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/artifacts/benchmarks.md)
+*   **Submission Metadata:** [`submission_metadata.yaml`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/submission_metadata.yaml)
+
+---
+
 ## 🚀 Quick Start & Reproduction
 
 ### 1. Installation
