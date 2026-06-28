@@ -23,7 +23,7 @@ It is designed to select and rank the top 100 matches from a pool of 100,000 can
 *   **Final Ranking Output (Excel & CSV):** [`team_fitrank_ai.xlsx`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/team_fitrank_ai.xlsx) | [`team_fitrank_ai.csv`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/team_fitrank_ai.csv)
 *   **Business Impact & Sourcing Case Study:** [`business_impact.md`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/artifacts/business_impact.md)
 *   **System Architecture Benchmarks:** [`benchmarks.md`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/artifacts/benchmarks.md)
-*   **Submission Slide Deck (PPTX):** [`FitRank_AI_Idea_Submission.pptx`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/FitRank_AI_Idea_Submission.pptx)
+*   **Submission Slide Deck (PDF & PPTX):** [`FitRank_AI_Idea_Submission.pdf`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/FitRank_AI_Idea_Submission.pdf) | [`FitRank_AI_Idea_Submission.pptx`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/FitRank_AI_Idea_Submission.pptx)
 *   **Submission Metadata:** [`submission_metadata.yaml`](https://github.com/Anshukanukula/FITRANK-AI/blob/main/submission_metadata.yaml)
 
 ---
