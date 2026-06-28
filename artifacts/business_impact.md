@@ -27,11 +27,11 @@ graph TD
 ```mermaid
 graph TD
     JD[Job Description] --> Hybrid[Hybrid BM25 + Dense Retrieval]
-    Hybrid --> Trust[Trust Engine: Anomaly Audits]
+    Hybrid --> Trust["Trust Engine: Anomaly Audits"]
     Trust --> LTR[LambdaRank Learning-to-Rank]
     LTR --> XAI[Explainable AI Reasoning]
     XAI --> Screen[Shortlist of 10 Highly Audited Candidates]
-    Screen --> Hire[Fast / Trusted Sourcing Cycle]
+    Screen --> Hire["Fast / Trusted Sourcing Cycle"]
 ```
 
 *   **Approach:** Multi-stage retrieval (BM25 + Dense semantic embeddings fused via RRF) + LightGBM LambdaRank + Trust Engine validation.
